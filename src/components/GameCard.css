@@ -1,0 +1,72 @@
+.game-card {
+  background-color: #1e1e1e;
+  color: #a8ffdb;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 1em;
+  font-weight: bold;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  width: 100%;
+  max-width: 400px;
+  overflow: hidden;
+  transition: transform 0.2s;
+}
+
+.game-card:hover {
+  transform: scale(1.05);
+}
+
+.game-card-header {
+  background-color: #136666;
+  padding: 15px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.team-logo {
+  width: 40px;
+  height: 40px;
+}
+
+.competition-logo {
+  width: 30px;
+  height: 30px;
+}
+
+.game-card-body {
+  padding: 15px;
+  background-color: #1e1e1e;
+}
+
+.competition-name {
+  font-size: 1.1em;
+  font-weight: bold;
+}
+
+.game-round {
+  font-size: 0.9em;
+  margin-bottom: 5px;
+}
+
+.game-datetime,
+.game-stadium {
+  font-size: 0.9em;
+  opacity: 0.8;
+  margin: 5px 0;
+}
+
+.game-details {
+  display: inline-block;
+  margin-top: 10px;
+  text-decoration: none;
+  color: #a8ffdb;
+  font-weight: bold;
+  transition: color 0.3s ease-in-out;
+}
+
+.game-details:hover {
+  color: #4de3c7;
+}
