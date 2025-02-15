@@ -13,7 +13,7 @@ function App() {
   >([]);
 
   useEffect(() => {
-    fetch("/data/players.json")
+    fetch("./data/players.json")
       .then((response) => response.json())
       .then((data: { id: number; name: string; position: string; rating: number; goals: number; saves: number; assists: number; photo: string; }[]) => {
         const sortedPlayers = data.sort((a, b) => b.rating - a.rating);
@@ -23,7 +23,7 @@ function App() {
   }, []);
   
   useEffect(() => {
-    fetch("/data/games.json")
+    fetch("./data/games.json")
       .then((response) => response.json())
       .then((data) => setGames(data))
       .catch((error) => console.error("Erro ao carregar jogos:", error));
@@ -32,10 +32,10 @@ function App() {
   return (
     <div className="container">
       <header>
-        <img src="/logo/image_colored_removed_text.webp" alt="Time Logo" className="logo" />
+        <img src="./logo/image_colored_removed_text.webp" alt="Time Logo" className="logo" />
       </header>
       <section className="team-photo">
-        <img src="/pics/team-photo.jpg" alt="Time" />
+        <img src="./pics/team-photo.jpg" alt="Time" />
       </section>
       <section className="games">
         <h1>Próximos Jogos</h1>

@@ -6,8 +6,8 @@
     "date": "Sábado, 15/02",
     "time": "16:15 h",
     "stadium": "Deco 20",
-    "homeLogo": "/teams/velhosfc.webp",
-    "awayLogo": "/teams/real.webp"
+    "homeLogo": "./teams/velhosfc.webp",
+    "awayLogo": "./teams/real.webp"
   },
   {
     "id": 2,
@@ -16,7 +16,7 @@
     "date": "Quarta-feira, 19/02",
     "time": "21:00 h",
     "stadium": "Estadio Santiago Bernabéu",
-    "homeLogo": "/teams/real.webp",
-    "awayLogo": "/teams/velhosfc.webp"
+    "homeLogo": "./teams/real.webp",
+    "awayLogo": "./teams/velhosfc.webp"
   }
 ]
