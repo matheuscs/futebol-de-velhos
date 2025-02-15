@@ -6,8 +6,8 @@
     "date": "Sábado, 15/02",
     "time": "16:15 h",
     "stadium": "Deco 20",
-    "homeLogo": "/teams/velhosfc.webp",
-    "awayLogo": "/teams/real.webp"
+    "homeLogo": "./teams/velhosfc.webp",
+    "awayLogo": "./teams/real.webp"
   },
   {
     "id": 2,
