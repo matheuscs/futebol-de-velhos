@@ -16,7 +16,7 @@
     "date": "Quarta-feira, 19/02",
     "time": "21:00 h",
     "stadium": "Estadio Santiago Bernabéu",
-    "homeLogo": "/teams/real.webp",
-    "awayLogo": "/teams/velhosfc.webp"
+    "homeLogo": "./teams/real.webp",
+    "awayLogo": "./teams/velhosfc.webp"
   }
 ]
