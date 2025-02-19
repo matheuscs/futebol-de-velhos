@@ -50,6 +50,8 @@ img {
   grid-template-columns: repeat(4, 1fr);
   gap: 20px;
   justify-content: center;
+  justify-items: center;
+  align-items: center;
   padding: 20px;
 }
 
@@ -66,6 +68,19 @@ img {
   grid-template-columns: repeat(1, 1fr);
 }
 
+.games {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.games-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
 @media (max-width: 768px) {
   .logo {
     width: 50%;
@@ -76,6 +91,8 @@ img {
   }
 
   .games-list {
+    flex-direction: column;
+    align-items: center;
     grid-template-columns: repeat(2, 1fr);
   }
 
@@ -98,30 +115,6 @@ img {
   }
 
   .logo {
-    width: 80%;
-  }
-}
-
-.games {
-  text-align: center;
-  margin-top: 40px;
-}
-
-.games-list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
-  padding: 20px;
-}
-
-@media (max-width: 768px) {
-  .logo {
     width: 50%;
-  }
-  
-  .games-list {
-    flex-direction: column;
-    align-items: center;
   }
 }
