@@ -5,9 +5,10 @@ body {
   margin: 0;
   padding: 0;
   display: flex;
-  justify-content: center; /* Centers the main content horizontally */
-  align-items: center; /* Centers the content vertically */
-  min-height: 100vh; /* Full height of the viewport */
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  overflow-x: hidden;
 }
 
 .container {
@@ -27,9 +28,21 @@ header {
 }
 
 .team-photo img {
-  width: 100%;
+  width: 90%;
+  height: auto;
   border-radius: 10px;
   filter: brightness(0.5);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  width: 95%;
+  margin: auto;
+  padding: 10px;
 }
 
 .players-grid {
@@ -53,18 +66,42 @@ header {
   grid-template-columns: repeat(1, 1fr);
 }
 
-/* Responsive adjustments */
 @media (max-width: 768px) {
-  .players-grid {
+  .logo {
+    width: 50%;
+  }
+
+  .team-photo img {
+    filter: none;
+  }
+
+  .games-list {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .players-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  h1 {
+    font-size: 1.75em;
   }
 }
 
 @media (max-width: 480px) {
-  .players-grid {
+  .games-list {
     grid-template-columns: repeat(1, 1fr);
   }
+
+  .players-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .logo {
+    width: 80%;
+  }
 }
+
 .games {
   text-align: center;
   margin-top: 40px;
@@ -79,6 +116,10 @@ header {
 }
 
 @media (max-width: 768px) {
+  .logo {
+    width: 50%;
+  }
+  
   .games-list {
     flex-direction: column;
     align-items: center;

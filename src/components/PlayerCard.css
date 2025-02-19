@@ -7,7 +7,8 @@
   font-size: 1em;
   font-weight: bold;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
-  width: 250px;
+  width: 100%;
+  max-width: 250px;
   transition: transform 0.2s;
 }
 
@@ -23,14 +24,13 @@
   margin-bottom: 10px;
 }
 
-.name {
+.name, .position, .rating {
   margin: auto;
 }
 
 .position {
   font-size: 0.9em;
   opacity: 0.8;
-  margin: auto;
 }
 
 .rating {
@@ -50,4 +50,38 @@
   display: flex;
   align-items: center;
   gap: 5px;
+}
+
+@media (max-width: 768px) {
+  .player-card {
+    max-width: 200px;
+    padding: 10px;
+    font-size: 0.9em;
+  }
+
+  .player-photo {
+    width: 80px;
+    height: 80px;
+  }
+
+  .position, .rating, .stats {
+    font-size: 0.8em;
+  }
+}
+
+@media (max-width: 480px) {
+  .player-card {
+    max-width: 150px;
+    padding: 8px;
+    font-size: 0.8em;
+  }
+
+  .player-photo {
+    width: 70px;
+    height: 70px;
+  }
+
+  .position, .rating, .stats {
+    font-size: 0.7em;
+  }
 }
